@@ -13,6 +13,7 @@ tugas, 20% dari nilai kuis, 30% nilai UTS, dan 40% nilai UAS. Setiap nilai yang 
 mempunyai batas nilai 0 ‐ 100. Ketika pengguna memasukkan di luar rentang tersebut maka 
 akan keluar output “nilai tidak valid”. Ketika nilai akhir sudah didapatkan selanjutnya lakukan 
 konversi nilai dengan ketentuan sebagai berikut: 
+
 <img width="699" height="349" alt="image" src="https://github.com/user-attachments/assets/5f9ce423-2b43-4b1a-a1a3-5656e4421f98" />
 
 Jika Nilai Huruf yang didapatkan adalah A, B+, B, C+, C maka LULUS, jika nilai huruf D dan E 
@@ -64,10 +65,14 @@ Output: * 2 # 4 * # * 8 # * # * 14 16 * # * 20
 ### Pertanyaan Percobaan 3
 
 1. Buatlah program untuk menghitung IP Semester dari mata kuliah yang Anda tempuh 
-semester lalu. Formula untuk menghitung IP semester sebagai berikut:  
+semester lalu. Formula untuk menghitung IP semester sebagai berikut:
+
 <img width="512" height="87" alt="image" src="https://github.com/user-attachments/assets/92acab41-822f-41fd-a09f-0777eb39656c" />
+
 Nilai setara didapatkan dari tabel konversi berikut ini:
+
 <img width="687" height="348" alt="image" src="https://github.com/user-attachments/assets/06f4717f-30ac-494f-8c30-b8c0d01ef2c5" />
+
 Input dari program berupa nama mata kuliah, bobot SKS, serta nilai huruf dari mata kuliah 
 tersebut.
 
@@ -89,7 +94,9 @@ tersebut.
 RoyalGarden adalah toko bunga yang memiliki banyak cabang. Setiap hari Stock Bunga dan bunga
 bunga yang dijual selalu dicatat dengan rincian seperti berikut ini: 
 Baris = Cabang Toko, Kolom = Stock bunga pada hari x 
+
 <img width="892" height="218" alt="image" src="https://github.com/user-attachments/assets/d91bafaa-c960-41fd-b7ff-4c1288a7ea69" />
+
 Rincian Harga Aglonema =75.000, Keladi = 50.000, Alocasia =60.000, Mawar =10.000. 
 1. Buatlah fungsi untuk menampilkan pendapatan setiap cabang jika semua bunga habis terjual. 
 2. Tampilkan status  dari setiap cabang dengan ketentuan sebagai berikut ini : 
@@ -116,7 +123,9 @@ b. Jika pendapatan ≤ Rp1.500.000, status “Perlu Evaluasi”.
 adalah array satu dimensi char KODE[10], berisi kode plat mobil. Array kedua, array dua 
 dimensi char KOTA[10][12] berisi nama kota yang berpasangan dengan kode plat mobil. 
 Ilustrasi tampilan array tersebut adalah sebagai berikut:
+
 <img width="819" height="425" alt="image" src="https://github.com/user-attachments/assets/7d4cbebf-91f3-42e8-ba95-9193ac75c919" />
+
 Ketika pengguna memberikan input kode plat nomor maka program akan mengeluarkan 
 nama kota dari kode plat nomor tersebut.
 
