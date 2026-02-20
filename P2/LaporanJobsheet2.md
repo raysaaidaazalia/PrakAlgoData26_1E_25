@@ -17,18 +17,25 @@
 ### Pertanyaan 
 
 1. Sebutkan dua karakteristik class atau object!
-   = atribut,method
+   
+   ##### = atribut,method
+   
 2. Perhatikan class Mahasiswa pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class Mahasiswa? Sebutkan apa saja atributnya!
-   =nama25,nim25,kelas25,ipk25
+   
+   ##### =nama25,nim25,kelas25,ipk25
+   
 3. Ada berapa method yang dimiliki oleh class tersebut? Sebutkan apa saja methodnya!
-   =tampilkanInformasi25(),UbahKelas25(String kelasBaru25),updateIpk25(double ipkBaru25),String nilaiKinerja25()
+   
+   ##### =tampilkanInformasi25(),UbahKelas25(String kelasBaru25),updateIpk25(double ipkBaru25),String nilaiKinerja25()
+   
 4. Perhatikan method updateIpk() yang terdapat di dalam class Mahasiswa. Modifikasi isi method tersebut sehingga IPK yang dimasukkan valid yaitu terlebih dahulu dilakukan pengecekan apakah
 IPK yang dimasukkan di dalam rentang 0.0 sampai dengan 4.0 (0.0 <= IPK <= 4.0). Jika IPK tidak pada rentang tersebut maka dikeluarkan pesan: "IPK tidak valid. Harus antara 0.0 dan 4.0".
 
 <img width="851" height="944" alt="image" src="https://github.com/user-attachments/assets/9031261b-ad2e-4ec1-9a06-020e1f61d68b" />
 
 5. Jelaskan bagaimana cara kerja method nilaiKinerja() dalam mengevaluasi kinerja mahasiswa,kriteria apa saja yang digunakan untuk menentukan nilai kinerja tersebut, dan apa yang dikembalikan (di-return-kan) oleh method nilaiKinerja() tersebut?
-  =mengecek nilai ipk,lalu membandingkan dengan rentang nilai,setelah itu di return kan ke nilaiKinerja().
+   
+ ##### =mengecek nilai ipk,lalu membandingkan dengan rentang nilai,setelah itu di return kan ke nilaiKinerja().
 
 6. Commit dan push kode program ke Github
 
@@ -45,11 +52,16 @@ IPK yang dimasukkan di dalam rentang 0.0 sampai dengan 4.0 (0.0 <= IPK <= 4.0). 
 ### Pertanyaan
 
 1. Pada class MahasiswaMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi! Apa nama object yang dihasilkan?
-   =Mahasiswa25 mhs2 = new Mahasiswa25();
+   
+  ##### =Mahasiswa25 mhs2 = new Mahasiswa25();
+  
 2. Bagaimana cara mengakses atribut dan method dari suatu objek?
-   =menggunakan titik (.) / ex= mhs2.updateIpk25()
+   
+  ##### =menggunakan titik (.) / ex= mhs2.updateIpk25()
+  
 3. Mengapa hasil output pemanggilan method tampilkanInformasi() pertama dan kedua berbeda?
-  =karena sebelum pemanggilan kedua nilai ipk dan kelas di ubah terlebih dahulu
+   
+  ##### =karena sebelum pemanggilan kedua nilai ipk dan kelas di ubah terlebih dahulu
 
 ## Percobaan 3:Membuat Konstruktor
 
@@ -66,13 +78,21 @@ IPK yang dimasukkan di dalam rentang 0.0 sampai dengan 4.0 (0.0 <= IPK <= 4.0). 
 <img width="832" height="621" alt="Screenshot 2026-02-20 133020" src="Screenshot 2026-02-20 133020.png">
 
 1.Pada class Mahasiswa di Percobaan 3, tunjukkan baris kode program yang digunakan untuk mendeklarasikan konstruktor berparameter!
-   = public Mahasiswa25(String nim, String nama, String kelas, double ipk)
+
+#####  = public Mahasiswa25(String nim, String nama, String kelas, double ipk)
+
 2. Perhatikan class MahasiswaMain. Apa sebenarnya yang dilakukan pada baris program berikut?
-   =(mengisi deklarasi di baris sebelumnya) Mahasiswa25 mhs2 = new Mahasiswa25("2341760002","Andi","TI-1C",3.6);
+   
+ #####  =(mengisi deklarasi di baris sebelumnya) Mahasiswa25 mhs2 = new Mahasiswa25("2341760002","Andi","TI-1C",3.6);
+ 
 3. Hapus konstruktor default pada class Mahasiswa, kemudian compile dan run program.Bagaimana hasilnya? Jelaskan mengapa hasilnya demikian!
-   = akan terjadi eror,dikarnakan tidak ada konstruktor,dan tidak ada parameternya
+   
+  ##### = akan terjadi eror,dikarnakan tidak ada konstruktor,dan tidak ada parameternya
+  
 4. Setelah melakukan instansiasi object, apakah method di dalam class Mahasiswa harus diakses secara berurutan? Jelaskan alasannya!
-   =Tidak,Karena pemanggilan method tergantung kebutuhan,bukan urutan.
+   
+  ##### =Tidak,Karena pemanggilan method tergantung kebutuhan,bukan urutan.
+  
 5. Buat object baru dengan nama mhs<NamaMahasiswa> menggunakan konstruktor
 berparameter dari class Mahasiswa!
 
