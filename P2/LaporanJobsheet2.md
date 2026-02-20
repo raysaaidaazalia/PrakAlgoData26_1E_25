@@ -26,7 +26,7 @@
    
 3. Ada berapa method yang dimiliki oleh class tersebut? Sebutkan apa saja methodnya!
    
-   ##### =tampilkanInformasi25(),UbahKelas25(String kelasBaru25),updateIpk25(double ipkBaru25),String nilaiKinerja25()
+   ##### = tampilkanInformasi25(),UbahKelas25(String kelasBaru25),updateIpk25(double ipkBaru25),nilaiKinerja25().
    
 4. Perhatikan method updateIpk() yang terdapat di dalam class Mahasiswa. Modifikasi isi method tersebut sehingga IPK yang dimasukkan valid yaitu terlebih dahulu dilakukan pengecekan apakah
 IPK yang dimasukkan di dalam rentang 0.0 sampai dengan 4.0 (0.0 <= IPK <= 4.0). Jika IPK tidak pada rentang tersebut maka dikeluarkan pesan: "IPK tidak valid. Harus antara 0.0 dan 4.0".
