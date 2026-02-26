@@ -33,5 +33,7 @@ public class dosenDemo25 {
             dsn25.tampilkan_Info();
         System.out.println("------------------------------------------");
         }
+        dataDosen25 data = new dataDosen25();
+        data.cariUmurTertuaDanTermuda(arrayofdosen);
     }
 }
