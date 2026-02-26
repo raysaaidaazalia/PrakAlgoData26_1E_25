@@ -15,5 +15,11 @@ public class Matakuliah25 {
     this.sks25 = sks25;
     this.jumlahJam25 = jumlahJam25;
    }
+    void tambahData25(String kode,String nama,int sks,int jumlahJam){
+    kode25 = kode;
+    nama25 = nama;
+    sks25 = sks;
+    jumlahJam25=jumlahJam;
+}
 }
 
