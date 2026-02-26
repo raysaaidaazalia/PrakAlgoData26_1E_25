@@ -24,16 +24,12 @@ public class MahasiswaDemo25 {
             System.out.println("-----------------------");
        
         }
-        
-        for (int i = 0; i < arrayofmahasiswa25.length; i++) {
-            System.out.println("NIM : " +arrayofmahasiswa25[i].nim25);
-        System.out.println("Nama : "+ arrayofmahasiswa25[i].nama25);
-        System.out.println("Kelas : "+arrayofmahasiswa25[i].kelas25);
-        System.out.println("IPK : "+ arrayofmahasiswa25[i].ipk25);
-        System.out.println("--------------------------------");
+        System.out.println("Cek informasi");
+        for (Mahasiswa25 mhs25 : arrayofmahasiswa25) {
+            mhs25.cekInfo25();
+            System.out.println("------------------------------");
         }
-        
-   
+
     }  
     
 }
