@@ -7,10 +7,10 @@ public class pangkat25 {
         nilai25 = n25;
         pangkat = p25;
     }
-    int pangkatBF(){
+    int pangkatBF(int a25,int n25){
         int hasil25 = 1;
-        for (int i = 0; i < pangkat; i++) {
-            hasil25 = hasil25 * nilai25;
+        for (int i = 0; i <n25; i++) {
+            hasil25 = hasil25 *a25;
         }
         return hasil25;
     }
