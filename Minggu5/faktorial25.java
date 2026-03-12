@@ -3,9 +3,11 @@ package Minggu5;
 public class faktorial25 {
     int faktorialBF25(int n){
         int fakto25=1;
-        for (int i = 1; i <=n; i++) {
-            fakto25 = fakto25 * i ;
-        }
+        int i=1;
+       while (i <= n) {
+        fakto25 = fakto25 * i;
+        i++;
+       }
         return fakto25;
     }
 int faktorialDC25(int n) {
