@@ -1,9 +1,7 @@
 package Praktikum05;
-
 public class Sorting25 {
     int [] data25;
     int jumlahData25;
-
 Sorting25 (int Data25[], int jmlData25){
  jumlahData25 = jmlData25;
  data25=new int[jmlData25];

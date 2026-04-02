@@ -3,7 +3,6 @@ package Praktikum05;
 public class SortingMain25 {
     public static void main(String[] args) {
     int a25[]={20,10,2,7,12};
-    
    Sorting25 dataurut1=new Sorting25(a25, a25.length); 
    System.out.println("Data awal 1");
    dataurut1.tampil();;
