@@ -51,5 +51,9 @@ MahasiswaBerprestasi25 list = new MahasiswaBerprestasi25();
     System.out.println("Data yang sudah terurut menggunakan SELECTION SORT (ASC)");
     list.SelectionSort25();
     list.tampil();
+
+    System.out.println("Data yang sudah terurut menggunakan INSERTION SORT (ASC)");
+    list.insertionSort25();
+    list.tampil();
 }
 }
