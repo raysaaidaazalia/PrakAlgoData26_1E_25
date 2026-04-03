@@ -1,6 +1,7 @@
 package Praktikum05;
 
 public class MahasiswaBerprestasi25 {
+    
     Mahasiswa25 [] listmhs = new Mahasiswa25[5];
     int idx;
 void tambah (Mahasiswa25 m){
@@ -12,7 +13,7 @@ void tambah (Mahasiswa25 m){
       }
     }
 void tampil(){
-    for (int i = 0; i < idx ; i++) {
+    for (int i = 0; i < listmhs.length ; i++) {
         listmhs[i].tampilInformasi();
        System.out.println("-------------------"); 
     }
@@ -20,8 +21,8 @@ void tampil(){
     }
 
 void bubblesort(){
-    for (int i = 0; i < idx-1; i++) {
-        for (int j = 1; j < idx-i; j++) {
+    for (int i = 0; i < listmhs.length-1; i++) {
+        for (int j = 1; j < listmhs.length-i; j++) {
             if (listmhs[j].ipk25>listmhs [j-1].ipk25) {
                 Mahasiswa25 tmp25 = listmhs[j];
                 listmhs[j]=listmhs[j-1];
@@ -30,7 +31,19 @@ void bubblesort(){
         }
     }
 }
- 
+ void SelectionSort25(){
+    for (int i = 0; i < listmhs.length-1; i++) {
+        int idxmin =i;
+        for (int j = i+1; j < listmhs.length; j++) {
+        if (listmhs[j].ipk25<listmhs[idxmin].ipk25) {
+         idxmin=j;   
+        }
+        }
+    Mahasiswa25 tmp = listmhs[idxmin];
+    listmhs[idxmin]=listmhs[i];
+    listmhs[i]=tmp;
+    }
+ }
 }
 
 
