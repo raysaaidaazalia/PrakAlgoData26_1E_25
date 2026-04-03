@@ -47,7 +47,7 @@ void insertionSort25(){
     for (int i = 0; i < listmhs.length; i++) {
         Mahasiswa25 temp = listmhs[i];
         int j=i;
-        while (j>0 && listmhs[j-1].ipk25>temp.ipk25) {
+        while (j>0 && listmhs[j-1].ipk25<temp.ipk25) {
             listmhs[j] = listmhs [j-1];
             j--;
         }
