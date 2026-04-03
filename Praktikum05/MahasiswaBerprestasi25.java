@@ -12,14 +12,16 @@ void tambah (Mahasiswa25 m){
       }
     }
 void tampil(){
-    for (Mahasiswa25 m : listmhs) {
-    m.tampilInformasi();
-    System.out.println("-----------------------------------");    
+    for (int i = 0; i < idx ; i++) {
+        listmhs[i].tampilInformasi();
+       System.out.println("-------------------"); 
     }
-}
+        
+    }
+
 void bubblesort(){
-    for (int i = 0; i < listmhs.length-1; i++) {
-        for (int j = 1; j < listmhs.length-i; j++) {
+    for (int i = 0; i < idx-1; i++) {
+        for (int j = 1; j < idx-i; j++) {
             if (listmhs[j].ipk25>listmhs [j-1].ipk25) {
                 Mahasiswa25 tmp25 = listmhs[j];
                 listmhs[j]=listmhs[j-1];
