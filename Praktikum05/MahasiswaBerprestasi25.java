@@ -54,6 +54,35 @@ void insertionSort25(){
     listmhs[j]=temp;
     }
 }
+int sequentialSearching25(double cari25){
+  int posisi = -1;
+  for (int j = 0; j < listmhs.length; j++) {
+    if (listmhs[j].ipk25==cari25) {
+        posisi=j;
+        break;
+    }
+  }
+  return posisi;
+}
+void tampilPosisi(double  x25,int pos25){
+    if (pos25!=-1) {
+      System.out.println("data mahasiswa dengan IPK: "+x25+" ditemukan pada indeks "+pos25);  
+    }
+    else{
+        System.out.println("data "+x25+"tidak ditemukan");
+    }
+}
+void tampilDataSearch(double x25,int pos25){
+if (pos25!=-1) {
+    System.out.println("Nim\t:"+listmhs[pos25].nim25);
+    System.out.println("Nama\t:"+listmhs[pos25].nama25);
+    System.out.println("Kelas\t:"+listmhs[pos25].kelas25);
+    System.out.println("ipk\t:"+x25);
+}
+else{
+    System.out.println("Data mahasiswa dengan IPK"+x25+"tidak ditemukan");
+}
+}
 }
 
 
