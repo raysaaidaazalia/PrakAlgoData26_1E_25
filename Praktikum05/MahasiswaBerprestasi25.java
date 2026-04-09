@@ -83,6 +83,22 @@ else{
     System.out.println("Data mahasiswa dengan IPK"+x25+"tidak ditemukan");
 }
 }
+int findBinarySearch(double cari25,int left25,int ringht25){
+  int mid25;
+  if (ringht25>=left25) {
+    mid25=(left25+ringht25)/2;
+    if (cari25==listmhs[mid25].ipk25) {
+        return (mid25);
+    }
+    else if (listmhs[mid25].ipk25>cari25) {
+        return findBinarySearch(cari25, left25, mid25-1);
+    }
+    else{
+        return findBinarySearch(cari25, mid25+1, ringht25);
+    }
+  }
+  return -1;
+}
 }
 
 

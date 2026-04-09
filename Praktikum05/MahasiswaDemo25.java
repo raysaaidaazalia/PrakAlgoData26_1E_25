@@ -32,9 +32,18 @@ System.out.println("IPK: ");
 double cari25 = raysha.nextDouble();
 
 
-System.out.println("Menggunakan sequential searching");
-double posisi = list.sequentialSearching25(cari25);
-int pss = (int)posisi;
+// System.out.println("Menggunakan sequential searching");
+// System.out.println("------------------------------------");
+// double posisi = list.sequentialSearching25(cari25);
+// int pss = (int)posisi;
+// list.tampilPosisi(cari25,pss);
+// list.tampilDataSearch(cari25,pss);
+
+
+System.out.println("Menggunakan binary search");
+System.out.println("------------------------------------");
+double posisi2=list.findBinarySearch(cari25,0,jumlahMhs-1);
+int pss=(int)posisi2;
 list.tampilPosisi(cari25,pss);
 list.tampilDataSearch(cari25,pss);
 
