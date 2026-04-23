@@ -66,4 +66,17 @@ public mahasiswa25 lihatBawah() {
 public int jumlahTugas25() {
     return top25 + 1;
 }
+public String konversiDesimalKeBiner(int nilai25) {
+    StackKonversi25 stack25 = new StackKonversi25();
+    while (nilai25 > 0) {
+        int sisa25 = nilai25 % 2;
+        stack25.push25(sisa25);
+        nilai25 = nilai25/2;
+    }
+    String biner25 = new String();
+    while (! stack25.isEmpty()) {
+        biner25 += stack25.pop25();
+    }
+    return biner25;
+}
 }
