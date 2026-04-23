@@ -16,6 +16,7 @@ public class mahasiswaDemo25 {
             System.out.println("2.Menilai tugas");
             System.out.println("3.Melihat tugas teratas");
             System.out.println("4.Melihat daftar tugas");
+            System.out.println("5.Melihat tugas terbawah");
             System.out.println("pilih: ");
             pilih=scan.nextInt();
             scan.nextLine();

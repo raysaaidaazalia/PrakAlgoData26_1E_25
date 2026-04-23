@@ -50,7 +50,7 @@ public mahasiswa25 peek25() {
  }
 }
 public void print25(){
-    for (int i = 0; i <=top25; i++) {
+    for (int i = top25; i >=0 ; i--) {
         System.out.println(stack25[i].nama25 + "\t" + stack25[i].nim25 +"\t"+stack25[i].kelas25);
     }
     System.out.println(" ");
