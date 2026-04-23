@@ -53,6 +53,12 @@ public class mahasiswaDemo25 {
                     System.out.println("Nama\tNim\tKelas");
                     stack25.print25();
                     break;
+                case 5:
+                     mahasiswa25 bawah25 = stack25.lihatBawah();
+                     if (bawah25 != null) {
+                        System.out.println("Tugas pertama dikumpulkan oleh "+ bawah25.nama25);
+                    }
+                    break;
                 default:
                     System.out.println("pilihan tidak valid");
                     break;

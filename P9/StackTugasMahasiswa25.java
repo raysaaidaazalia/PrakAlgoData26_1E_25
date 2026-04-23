@@ -55,4 +55,12 @@ public void print25(){
     }
     System.out.println(" ");
 }
+public mahasiswa25 lihatBawah() {
+ if (! isEmpty()) {
+        return stack25[0];
+    }else{
+        System.out.println("Stack kosong!");
+        return null;
+    }
+}
 }
