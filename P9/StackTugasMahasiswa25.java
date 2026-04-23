@@ -63,4 +63,7 @@ public mahasiswa25 lihatBawah() {
         return null;
     }
 }
+public int jumlahTugas25() {
+    return top25 + 1;
+}
 }
