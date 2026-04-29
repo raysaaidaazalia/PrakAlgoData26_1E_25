@@ -58,6 +58,7 @@ public void clear() {
 public void Enqueue(int dt25) {
     if (isFull()) {
         System.out.println("Queue sudah penuh");
+        System.exit(1);
     }else{
         if (isEmpty()) {
             front25 = rear25 = 0;
@@ -75,6 +76,7 @@ public int Dequeue () {
     int dt25 = 0;
     if (isEmpty()) {
         System.out.println("Queue masih kosong");
+        System.exit(1);
     }else{
         dt25 = data25[front25];
         size25--;
