@@ -73,6 +73,15 @@ public void tampilkanSemua25() {
 public int getJumlahAntrian () {
     return size25;
 }
+public void lihatAkhir() {
+    if (isEmpty()) {
+        System.out.println("Antrian kosong.");
+    } else {
+        System.out.println("Mahasiswa paling belakang:");
+        System.out.println("NIM - NAMA - PRODI - KELAS");
+        data25[rear25].tampilkanData();
+    }
+}
 }
 
 
