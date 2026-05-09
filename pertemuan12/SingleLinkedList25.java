@@ -1,4 +1,5 @@
 package pertemuan12;
+
 public class SingleLinkedList25 {
     NodeMahasiswa25 head25;
     NodeMahasiswa25 tail25;
@@ -67,6 +68,83 @@ public void inserAt(int index,Mahasiswa25 input) {
         temp25.next25 = new NodeMahasiswa25(input,temp25.next25);
         if (temp25.next25.next25 == null) {
             tail25 = temp25.next25;
+        }
+    }
+}
+public void getData25 (int index) {
+    NodeMahasiswa25 tmp25 = head25;
+    for (int i = 0; i <index; i++) {
+        tmp25 = tmp25.next25;
+    }
+    tmp25.data25.tampilInformasi25();
+}
+public int indexOf(String key25) {
+    NodeMahasiswa25 temp25 = head25;
+    int index = 0;
+    while (temp25 != null && ! temp25.data25.nama25.equalsIgnoreCase(key25)) {
+        temp25 = temp25.next25;
+        index++;
+    }
+    if (temp25 == null) {
+        return -1;
+    }else {
+        return index;
+    }  
+}
+public void removeFirst() {
+    if (isEmty()) {
+        System.out.println("Linked list masih kosong, tidak dapat dihapus!");
+    }else if (head25 == tail25) {
+        head25 = tail25 = null;
+    }else {
+        head25 = head25.next25;
+    }
+}
+public void removeLast() {
+    if (isEmty()) {
+        System.out.println("Linked list masih kosong, tidak dapat dihapus!");
+    } else if (head25 == tail25) {
+        head25 = tail25 = null;
+    } else {
+      NodeMahasiswa25 temp25 = head25;
+      while (temp25.next25 != tail25) {
+        temp25 = temp25.next25;
+      }
+      temp25.next25 = null;
+      tail25 = temp25;
+    }
+}
+public void remove(String key25) {
+    if (isEmty()) {
+        System.out.println("Linked list masih kosong, tidak dapat dihapus!");
+    }else {
+        NodeMahasiswa25 temp25 = head25;
+        while (temp25 != null) {
+            if ((temp25.data25.nama25.equalsIgnoreCase(key25)&& (temp25 == head25))) {
+                this.removeFirst();
+                break;
+            }else if (temp25.data25.nama25.equals(key25)) {
+                temp25.next25 = temp25.next25.next25;
+                if (temp25.next25 == null) {
+                    tail25 = temp25;
+                }
+                break;
+            }
+            temp25 = temp25.next25;
+        }
+    }
+}
+public void removeAt(int index) {
+    if (index == 0) {
+        removeFirst();
+    }else {
+        NodeMahasiswa25 temp25 = head25;
+        for (int i = 0; i < index - 1; i++) {
+            temp25 = temp25.next25;
+        }
+        temp25.next25 = temp25.next25.next25;
+        if (temp25.next25 == null) {
+            tail25 = temp25;
         }
     }
 }

@@ -1,32 +1,29 @@
 package pertemuan12;
 
-import java.util.Scanner;
-
 public class SLLMain25 {
     public static void main(String[] args) {
-        Scanner Raysha = new Scanner(System.in);
         SingleLinkedList25 sll = new SingleLinkedList25();
-        String dummy;
     
-        System.out.println("Jumlah mahasiswa");
-        dummy = Raysha.nextLine();
-        int jmlMhs25 = Integer.parseInt(dummy);
-        for (int i = 0; i < jmlMhs25; i++) {
-        System.out.println("Masukkan data mahasiswa");
-        System.out.print("Nim: ");
-        String nim25 = Raysha.nextLine();
-        System.out.print("Nama: ");
-        String nama25 = Raysha.nextLine();
-        System.out.print("Kelas: ");
-        String kelas25 = Raysha.nextLine();
-        System.out.print("IPK: ");
-        dummy =Raysha.nextLine();
-        Double ipk25 = Double.parseDouble(dummy);
+         Mahasiswa25 mhs1 = new Mahasiswa25("21212203","Dirga","4D",3.6);
+        Mahasiswa25 mhs2 = new Mahasiswa25("22212202","Cintia","3C",3.5);
+        Mahasiswa25 mhs3 = new Mahasiswa25("23212201","Bimon","2B",3.8);
+        Mahasiswa25 mhs4 = new Mahasiswa25("24212200","Alvaro","1A",4.0);
 
-        Mahasiswa25 mhs = new Mahasiswa25(nim25,nama25,kelas25,ipk25);
-    
-       sll.addLast(mhs);
-        }
-        sll.print();
+        sll.addFirst(mhs1);
+        sll.addLast(mhs2);
+        sll.addLast(mhs3);
+        sll.addLast(mhs4);
+
+       System.out.println("data index 1: ");
+       sll.getData25(1);
+
+       System.out.println("data mahasiswa an Bimon berada pada index :"+sll.indexOf("bimon"));
+       System.out.println();
+
+       sll.removeFirst();
+       sll.removeLast();
+       sll.print();
+       sll.removeAt(0);
+       sll.print();
     }
 }
