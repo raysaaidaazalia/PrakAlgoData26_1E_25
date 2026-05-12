@@ -97,4 +97,15 @@ public void removeLast() {
         tail25.next25 = null;
     }
 }
+public void printReserve() {
+    if (isEmty()) {
+        System.out.println("Linked list masih kosong");
+        return;
+    }
+    Node25 current25 = tail25;
+    while (current25 != null) {
+        current25.data25.tampil();
+        current25=current25.prev25;
+    }
+}
 }
