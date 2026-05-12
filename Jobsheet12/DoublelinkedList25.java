@@ -69,14 +69,10 @@ System.out.println("Data berhasil disisipkan setelah NIM "+keynim25);
 public void removeFirst() {
     if (isEmty()) {
         System.out.println("Linked List masih kosong");
+        return;
     } else if (head25 == tail25) {
-        System.out.println("Data yang dihapus:");
-        head25.data25.tampil();
         head25 = tail25 = null;
     } else {
-        System.out.println("Data yang dihapus:");
-        head25.data25.tampil();
-
         head25 = head25.next25;
         head25.prev25 = null;
     }
@@ -84,15 +80,10 @@ public void removeFirst() {
 public void removeLast() {
     if (isEmty()) {
         System.out.println("Linked List masih kosong");
+        return;
     } else if (head25 == tail25) {
-        System.out.println("Data yang dihapus:");
-        tail25.data25.tampil();
-
         head25 = tail25 = null;
     } else {
-        System.out.println("Data yang dihapus:");
-        tail25.data25.tampil();
-
         tail25 = tail25.prev25;
         tail25.next25 = null;
     }
