@@ -71,8 +71,12 @@ public void removeFirst() {
         System.out.println("Linked List masih kosong");
         return;
     } else if (head25 == tail25) {
+        System.out.println("Data yang di hapus: ");
+        head25.data25.tampil();
         head25 = tail25 = null;
     } else {
+        System.out.println("Data yang di hapus: ");
+        head25.data25.tampil();
         head25 = head25.next25;
         head25.prev25 = null;
     }
@@ -82,8 +86,12 @@ public void removeLast() {
         System.out.println("Linked List masih kosong");
         return;
     } else if (head25 == tail25) {
+        System.out.println("Data yang di hapus: ");
+        tail25.data25.tampil();
         head25 = tail25 = null;
     } else {
+        System.out.println("Data yang di hapus: ");
+        tail25.data25.tampil();
         tail25 = tail25.prev25;
         tail25.next25 = null;
     }
