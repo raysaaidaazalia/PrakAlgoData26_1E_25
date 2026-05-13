@@ -31,6 +31,13 @@ public static void main(String[] args) {
     System.out.println("4.Hapus data di awal");
     System.out.println("5.Hapus data di akhir");
     System.out.println("6.Tampilkan data");
+    System.out.println("7. Tambah data pada indeks tertentu");
+    System.out.println("8. Hapus data setelah NIM tertentu");
+    System.out.println("9. Hapus data pada indeks tertentu");
+    System.out.println("10. Tampilkan data pertama");
+    System.out.println("11. Tampilkan data terakhir");
+    System.out.println("12. Tampilkan data pada indeks tertentu");
+    System.out.println("13. Tampilkan jumlah data");
     System.out.println("0.Keluar");
     System.out.println("Pilih menu");
     pilihan25 = Raysha.nextInt();
@@ -61,12 +68,57 @@ public static void main(String[] args) {
         case 6:
             list25.print();
         break;
-        case 0:
-            System.out.println("Program selesai.");
-        break;
-        default:
+        case 7:
+    System.out.print("Masukkan index: ");
+    int indexTambah25 = Raysha.nextInt();
+    Raysha.nextLine();
+
+    System.out.println("Masukkan data baru: ");
+    Mahasiswa25 dataIndex25 = inputMahasiswa25(Raysha);
+
+    list25.add(indexTambah25, dataIndex25);
+    break;
+
+case 8:
+    System.out.print("Masukkan NIM key: ");
+    String keyRemove25 = Raysha.nextLine();
+
+    list25.removeAfter(keyRemove25);
+    break;
+
+case 9:
+    System.out.print("Masukkan index: ");
+    int indexHapus25 = Raysha.nextInt();
+    Raysha.nextLine();
+
+    list25.remove(indexHapus25);
+    break;
+
+case 10:
+    list25.getFirst();
+    break;
+
+case 11:
+    list25.getLast();
+    break;
+
+case 12:
+    System.out.print("Masukkan index: ");
+    int indexCari25 = Raysha.nextInt();
+    Raysha.nextLine();
+
+    list25.getIndex(indexCari25);
+    break;
+
+case 13:
+    System.out.println("Jumlah data: " + list25.size25());
+    break;
+ case 0:
+     System.out.println("Program selesai.");
+ break;
+default:
             System.out.println("Menu tidak valid.");
-        break;
+break;
     }
  }while  (pilihan25 != 0);
 }
