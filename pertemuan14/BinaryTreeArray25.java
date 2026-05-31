@@ -20,4 +20,20 @@ void traverseInOrder25(int idxStart25){
     }
   }
 }
+void add(mahasiswa25 data) {
+    idxLast25++;
+    dataMahasiswa25[idxLast25] = data;
+}
+void traversePreOrder(int idxStart25) {
+    if (idxStart25 <= idxLast25) {
+        if (dataMahasiswa25[idxStart25] != null) {
+
+            dataMahasiswa25[idxStart25].tampilInformasi();
+
+            traversePreOrder(2 * idxStart25 + 1);
+
+            traversePreOrder(2 * idxStart25 + 2);
+        }
+    }
+}
 }

@@ -17,5 +17,8 @@ public class BinaryTreeAraayMain25 {
         bta25.populateData25(datamhs25,idxLast25);
         System.out.println("\nInorder Travelsal Mahasiswa: ");
         bta25.traverseInOrder25(0);
+
+        System.out.println("\nPreOrder Traversal Mahasiswa : ");
+        bta25.traversePreOrder(0);
     }
 }
