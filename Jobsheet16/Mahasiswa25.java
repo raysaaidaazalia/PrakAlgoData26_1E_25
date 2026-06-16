@@ -2,6 +2,8 @@ package Jobsheet16;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Mahasiswa25 {
@@ -36,13 +38,23 @@ public void tampil() {
         System.out.println(" "+mhs.toString());
     });
 }
-int linearSearch(String nim) {
-    for(int i = 0 ; i < mahasiswas.size(); i++){
-        if(nim.equals(mahasiswas.get(i).nim25)){
-            return i;
-        }
-    }
-    return -1;
+int binarySearch(String nim) {
+
+    Collections.sort(mahasiswas,
+            (a, b) -> a.nim25.compareTo(b.nim25));
+
+    return Collections.binarySearch(
+            mahasiswas,
+            new Mahasiswa25(nim, "", ""),
+            (a, b) -> a.nim25.compareTo(b.nim25));
+}
+void sortingAsc() {
+    Collections.sort(mahasiswas,
+            (a, b) -> a.nim25.compareTo(b.nim25));
+}
+void sortingDesc() {
+    Collections.sort(mahasiswas,
+            (a, b) -> b.nim25.compareTo(a.nim25));
 }
 public static void main(String[] args) {
     Mahasiswa25 lm25 = new Mahasiswa25();
@@ -54,8 +66,14 @@ public static void main(String[] args) {
     lm25.tambah(mhs, mhs1, mhs2);
     lm25.tampil();
 
+    lm25.sortingAsc();
+    lm25.tampil();
+
+    lm25.sortingDesc();
+    lm25.tampil();
+
     lm25.update(
-        lm25.linearSearch("201235"),
+        lm25.binarySearch("201235"),
         new Mahasiswa25("201235", "Akhleema", "08123456780")
     );
 
