@@ -189,11 +189,19 @@ yang di tambahin atau di modif
 
 <img width="398" height="133" alt="image" src="https://github.com/user-attachments/assets/8d4576e4-41ff-4288-9114-7ba90876209e" />
 
+
+
 <img width="373" height="88" alt="image" src="https://github.com/user-attachments/assets/2fb1f559-ad93-4415-a718-4e9757d9c4eb" />
+
+
 
 <img width="301" height="42" alt="image" src="https://github.com/user-attachments/assets/490dd087-0620-4041-a654-08d4194886e8" />
 
+
+
 <img width="503" height="357" alt="image" src="https://github.com/user-attachments/assets/3c9bd8ab-c991-4b2d-8870-f97ce26b61da" />
+
+
 
 ##### hasil running
 
