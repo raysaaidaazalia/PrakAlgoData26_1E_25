@@ -3,11 +3,14 @@ package Jobsheet16;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
+import java.util.LinkedList; 
+import java.util.Queue;
 
 public class MainTugas25 {
     static ArrayList<MahasiswaTugas25> daftarMhs = new ArrayList<>();
     static ArrayList<MataKuliahTugas25> daftarMK = new ArrayList<>();
     static ArrayList<NilaiTugas25> daftarNilai = new ArrayList<>();
+    static Queue<NilaiTugas25> antrianNilai = new LinkedList<>();
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -47,6 +50,9 @@ public class MainTugas25 {
                 case 5:
                     System.out.println("Keluar dari program...");
                     break;
+                case 6:
+                    hapusNilai();
+                break;
                 default:
                     System.out.println("Pilihan tidak valid!");
             }
@@ -71,6 +77,7 @@ public class MainTugas25 {
         System.out.println("3. Mencari Nilai Mahasiswa");
         System.out.println("4. Urut Data Nilai");
         System.out.println("5. Keluar");
+        System.out.println("6. hapus data milai");
         cetakGaris();
     }
 
@@ -88,7 +95,7 @@ public class MainTugas25 {
         }
         
         if (mhsTerpilih == null) {
-            System.out.println("NIM Mahasiswa tidak ditemukan di data master!");
+            System.out.println("NIM Mahasiswa tidak ditemukan!");
             return;
         }
 
@@ -103,7 +110,7 @@ public class MainTugas25 {
         }
 
         if (mkTerpilih == null) {
-            System.out.println("Kode Mata Kuliah tidak ditemukan di data master!");
+            System.out.println("Kode Mata Kuliah tidak ditemukan!");
             return;
         }
 
@@ -112,14 +119,13 @@ public class MainTugas25 {
         sc.nextLine();
 
         daftarNilai.add(new NilaiTugas25(mhsTerpilih, mkTerpilih, nilai));
-        System.out.println("Data nilai berhasil ditambahkan!");
         System.out.println();
     }
 
     static void tampilNilai() {
         System.out.println("\n=== TAMPIL NILAI ===");
         if (daftarNilai.isEmpty()) {
-            System.out.println("Belum ada data nilai yang diinput.");
+            System.out.println("Belum ada data");
         } else {
             for (NilaiTugas25 n : daftarNilai) {
                 System.out.println(n.mhs.nim25 + " - " + n.mhs.nama25 + " - " + n.mk.namaMK25 + " - " + n.nilai);
@@ -166,6 +172,39 @@ public class MainTugas25 {
         System.out.println("\n=== URUT DATA NILAI (NIM Tertinggi ke Terendah) ===");
         for (NilaiTugas25 n : daftarNilai) {
             System.out.println(n.mhs.nim25 + " - " + n.mhs.nama25 + " - " + n.mk.namaMK25 + " - " + n.nilai);
+        }
+        System.out.println();
+    }
+  static void hapusNilai() {
+        System.out.println("\n=== HAPUS DATA NILAI (CARI NIM) ===");
+       
+        if (daftarNilai.isEmpty()) {
+            System.out.println("Daftar nilai kosong! Tidak ada data yang bisa dihapus.");
+            return;
+        }
+
+        System.out.print("Masukkan NIM Mahasiswa yang mau dihapus: ");
+        String nimHapus = sc.nextLine();
+        
+        boolean ditemukan = false;
+        for (int i = 0; i < daftarNilai.size(); i++) {
+            if (daftarNilai.get(i).mhs.nim25.equals(nimHapus)) {
+             
+                NilaiTugas25 dihapus = daftarNilai.remove(i); 
+                
+                System.out.println("Data nilai berikut berhasil dihapus:");
+                System.out.println("NIM         : " + dihapus.mhs.nim25);
+                System.out.println("Nama        : " + dihapus.mhs.nama25);
+                System.out.println("Mata Kuliah : " + dihapus.mk.namaMK25);
+                System.out.println("Nilai       : " + dihapus.nilai);
+                
+                ditemukan = true;
+                break; 
+            }
+        }
+        
+        if (!ditemukan) {
+            System.out.println("Mahasiswa dengan NIM " + nimHapus + " tidak ditemukan di daftar nilai.");
         }
         System.out.println();
     }
