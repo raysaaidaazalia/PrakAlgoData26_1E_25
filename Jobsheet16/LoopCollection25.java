@@ -1,5 +1,6 @@
 package Jobsheet16;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.Stack;
 
@@ -33,7 +34,6 @@ public class LoopCollection25 {
        System.out.println(" ");
        for(int i=0; i < fruits25.size(); i++){
        System.out.printf("%s ", fruits25.get(i));
-       fruits25.set(fruits25.size()-1, "Strawberry");
         }
         }
     }
