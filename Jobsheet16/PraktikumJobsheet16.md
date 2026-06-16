@@ -144,3 +144,57 @@ hasil running
 
 <img width="727" height="182" alt="image" src="https://github.com/user-attachments/assets/66fccd84-fa8a-4d2a-bb81-effab2660ec1" />
 
+## Tugas Praktikum 1
+
+#### code program
+
+##### class MahasiswaTugas25
+
+<img width="424" height="196" alt="image" src="https://github.com/user-attachments/assets/75f045c7-ce6d-4bbe-8132-d29225a2ace3" />
+
+##### class MataKuliahTugas25
+
+<img width="447" height="192" alt="image" src="https://github.com/user-attachments/assets/b6771868-4173-489e-baf9-1472815d5f4a" />
+
+##### class NilaiTugas25
+
+<img width="473" height="238" alt="image" src="https://github.com/user-attachments/assets/ed45af5f-ce69-4af9-b581-a8e2d2557411" />
+
+##### class MainTugas25
+
+<img width="655" height="445" alt="image" src="https://github.com/user-attachments/assets/b35f9ddb-79d8-40c9-96b4-da9e310b923b" />
+
+<img width="645" height="448" alt="image" src="https://github.com/user-attachments/assets/e72a34ce-a82e-4c7b-b63a-32d016e0bf81" />
+
+<img width="494" height="449" alt="image" src="https://github.com/user-attachments/assets/22b134b2-439d-4ff5-b25c-d40ddc8f6ded" />
+
+<img width="622" height="442" alt="image" src="https://github.com/user-attachments/assets/743053f3-ac08-4103-9492-10768d406ae4" />
+
+<img width="661" height="457" alt="image" src="https://github.com/user-attachments/assets/6c8ac578-a577-4d79-a710-c52826c05834" />
+
+<img width="368" height="49" alt="image" src="https://github.com/user-attachments/assets/1e96af8f-6420-41bd-94b8-6491c81a4da6" />
+
+#### hasil running
+
+<img width="335" height="457" alt="image" src="https://github.com/user-attachments/assets/25bc78be-2884-4793-b22e-528b8d2c6cdb" />
+
+<img width="320" height="470" alt="image" src="https://github.com/user-attachments/assets/871615b4-ca96-4271-b92dzf6f375041ae2" />
+
+<img width="302" height="186" alt="image" src="https://github.com/user-attachments/assets/fe425521-44a4-446e-bfe2-8911a91f6e41" />
+
+## Tugas Praktikum 2
+Tambahkan prosedur hapus data mahasiswa melalui implementasi Queue pada collections Tugas nomor 1!
+
+yang di tambahin atau di modif
+
+<img width="398" height="133" alt="image" src="https://github.com/user-attachments/assets/8d4576e4-41ff-4288-9114-7ba90876209e" />
+
+<img width="373" height="88" alt="image" src="https://github.com/user-attachments/assets/2fb1f559-ad93-4415-a718-4e9757d9c4eb" />
+
+<img width="301" height="42" alt="image" src="https://github.com/user-attachments/assets/490dd087-0620-4041-a654-08d4194886e8" />
+
+<img width="503" height="357" alt="image" src="https://github.com/user-attachments/assets/3c9bd8ab-c991-4b2d-8870-f97ce26b61da" />
+
+##### hasil running
+
+<img width="352" height="449" alt="image" src="https://github.com/user-attachments/assets/8039453f-f145-4fe7-8a90-3f37dce22c1d" />
