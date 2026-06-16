@@ -22,6 +22,13 @@ public class LoopCollection25 {
         }
         fruits25.push("Melon");
         fruits25.push("Durian");
+         fruits25.add("Mango");
+       fruits25.add("Guava");
+       fruits25.add("Avocado");
+
+       Collections.sort(fruits25);
+
+       System.out.println(fruits25);
         System.out.println(" ");
         for(Iterator<String>it = fruits25.iterator(); it.hasNext();){
             String fruit25 = it.next();
@@ -34,6 +41,7 @@ public class LoopCollection25 {
        System.out.println(" ");
        for(int i=0; i < fruits25.size(); i++){
        System.out.printf("%s ", fruits25.get(i));
+       fruits25.set(fruits25.size()-1, "Strawberry");
         }
         }
     }
